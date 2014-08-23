@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>You Did It</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <header class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container">
+                <%= link_to "FirstApp", "#", id:"logo" %>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <%= yield %>
+        <footer class="footer">
+            <small>  <a fref="codecamp.io"> </small>
+        </footer>
+    </div>
+</body>
+</html>
